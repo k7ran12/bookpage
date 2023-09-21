@@ -39,7 +39,13 @@
         </div>
     </div>
     <!-- END SHAPE -->
-
+    @if(session('success'))
+        <div class="container">
+          <div class="alert alert-success">
+            {{ session('success') }}
+          </div>
+        </div>
+    @endif
 
     <!-- START CONTACT-PAGE -->
     <section class="section">
@@ -54,7 +60,8 @@
                 
                 <p class="text-muted">Comienza a trabajar con nosotros para encontrar todo lo que necesitas y generar reconocimiento.</p>
       
-                <form method="post" name="formulario" id="formulario">
+                <form method="post" action="{{ route('enviar.correo') }}" name="formulario" id="formulario">
+                  @csrf
       
                   <div class="row">
       

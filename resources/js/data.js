@@ -38,8 +38,9 @@ const searchData = (valor) => {
           })
         modalResultBooks.show()
 
-        const modalBody = document.querySelector('.modal-body');
-
+        let modalBody = document.querySelector('.modal-body');
+        modalBody.innerHTML = '';
+        document.getElementById('book-title').value = '';
         const listGroup = document.createElement('ul');
         listGroup.className = 'list-group';
 
@@ -55,8 +56,9 @@ const searchData = (valor) => {
             // Crea un elemento span para el contador (badge)
             const badge = document.createElement('span');
             badge.className = 'badge bg-primary rounded-pill';
-            badge.textContent = i + 1; // Incrementa el contador en 1
-        
+            const icon = document.createElement('i');
+            icon.className = 'fa-solid fa-file-pdf';
+            badge.appendChild(icon);
             // Crea un elemento de anclaje para el enlace
             const anchor = document.createElement('a');
             anchor.href = link;

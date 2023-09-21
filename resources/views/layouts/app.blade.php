@@ -28,6 +28,11 @@
         <!--Custom Css-->
 
         <link rel="stylesheet" href="{{ Vite::asset('resources/css/fontawesome.css') }}">
+        <style>
+          .list-group-item-action:hover{
+            color: white !important;
+          }
+        </style>
 
     </head>
 
@@ -53,7 +58,7 @@
             <!--Navbar Start-->
             <nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
                 <div class="container-fluid custom-container">
-                    <a class="navbar-brand text-dark fw-bold me-auto" href="index.html">
+                    <a class="navbar-brand text-dark fw-bold me-auto" href="/">
                         <img src="{{ Vite::asset('resources/img/logo.png') }}" height="70" alt="" class="logo-dark" />
                         <img src="{{ Vite::asset('resources/img/logo.png') }}" height="70" alt="" class="logo-light" />
                     </a>
@@ -72,22 +77,8 @@
                               <a href="{{ route('categoria') }}" class="nav-link">Categorias</a>
                             </li>
                             <li class="nav-item">
-                              <a href="biografias.html" class="nav-link">Biografias</a>
+                              <a href="#" class="nav-link">Biografias</a>
                             </li>
-                            <li class="nav-item dropdown dropdown-hover">
-                                <a class="nav-link" href="javascript:void(0)" id="productdropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Blog 
-                                    <i class="fa-solid fa-circle-caret-down"></i>
-                                </a>
-                                <ul class="dropdown-menu dropdown-menu-center" aria-labelledby="productdropdown">
-                                    <li><a class="dropdown-item" href="blog.html">Blog</a></li>
-                                    <li><a class="dropdown-item" href="blog-grid.html">Blog Grid</a></li>
-                                    <li><a class="dropdown-item" href="blog-modern.html">Blog Modern</a></li>
-                                    <li><a class="dropdown-item" href="blog-masonry.html">Blog Masonry</a></li>
-                                    <li><a class="dropdown-item" href="blog-details.html">Blog details</a></li>
-                                    <li><a class="dropdown-item" href="blog-author.html">Blog Author</a></li>
-                                </ul>
-                            </li><!--end dropdown-->
                             <li class="nav-item">
                                 <a href="{{ route('contact') }}" class="nav-link">Contacto</a>
                             </li>
@@ -134,10 +125,9 @@
                           <div class="footer-item mt-4 mt-lg-0">
                             <p class="fs-16 text-white mb-4">Categorías</p>
                             <ul class="list-unstyled footer-list mb-0">
-                              <li><a href="/ficcion"><i class="mdi mdi-chevron-right"></i>Ficción</a></li>
-                              <li><a href="/literatura"><i class="mdi mdi-chevron-right"></i>Literatura</a></li>
-                              <li><a href="/romance"><i class="mdi mdi-chevron-right"></i>Romance</a></li>
-                              <li><a href="/thriller"><i class="mdi mdi-chevron-right"></i>Thriller</a></li>
+                              <li><a href="{{ route('lista_accion_aventura') }}"><i class="mdi mdi-chevron-right"></i>Acción y aventura</a></li>
+                              <li><a href="{{ route('lista_ciencia_ficcion') }}"><i class="mdi mdi-chevron-right"></i>Ciencia ficción</a></li>
+                              <li><a href="{{ route('lista_fantasia') }}"><i class="mdi mdi-chevron-right"></i>Fantasía</a></li>
                             </ul>
                           </div>
                         </div><!--end col-->
@@ -146,9 +136,9 @@
                           <div class="footer-item mt-4 mt-lg-0">
                             <p class="fs-16 text-white mb-4">Acerca de</p>
                             <ul class="list-unstyled footer-list mb-0">
-                              <li><a href="/nosotros"><i class="mdi mdi-chevron-right"></i> Sobre Nosotros</a></li>
-                              <li><a href="/terminos"><i class="mdi mdi-chevron-right"></i> Términos de Uso</a></li>
-                              <li><a href="/contacto"><i class="mdi mdi-chevron-right"></i>Contáctanos</a></li>
+                              <li><a href="#"><i class="mdi mdi-chevron-right"></i> Sobre Nosotros</a></li>
+                              <li><a href="#"><i class="mdi mdi-chevron-right"></i> Términos de Uso</a></li>
+                              <li><a href="{{ route('contact') }}"><i class="mdi mdi-chevron-right"></i>Contáctanos</a></li>
                             </ul>
                           </div>
                         </div><!--end col-->
@@ -157,8 +147,8 @@
                           <div class="footer-item mt-4 mt-lg-0">
                             <p class="fs-16 text-white mb-4">Soporte</p>
                             <ul class="list-unstyled footer-list mb-0">
-                              <li><a href="/faqs"><i class="mdi mdi-chevron-right"></i>Preguntas Frecuentes</a></li>
-                              <li><a href="/policy"><i class="mdi mdi-chevron-right"></i>Política de Privacidad</a></li>
+                              <li><a href="#"><i class="mdi mdi-chevron-right"></i>Preguntas Frecuentes</a></li>
+                              <li><a href="#"><i class="mdi mdi-chevron-right"></i>Política de Privacidad</a></li>
                             </ul>
                           </div>
                         </div><!--end col-->

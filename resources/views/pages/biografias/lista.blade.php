@@ -62,19 +62,19 @@
                         <div class="card-body p-4">
                             <ul class="list-unstyled job-Categories-list mb-0">
                                 <li>
-                                    <a href="{{ route('lista_accion_aventura') }}" class="primary-link">Acción y aventura <span class="badge bg-info-subtle text-info float-end">4</span></a>
+                                    <a href="{{ route('lista_accion_aventura') }}" class="primary-link">Acción y aventura <span class="badge bg-info-subtle text-info float-end">25</span></a>
                                 </li>
                                 <li>
-                                    <a href="{{ route('lista_ciencia_ficcion') }}" class="primary-link">Ciencia ficción <span class="badge bg-info-subtle text-info float-end">4</span></a>
+                                    <a href="{{ route('lista_ciencia_ficcion') }}" class="primary-link">Ciencia ficción <span class="badge bg-info-subtle text-info float-end">10</span></a>
                                 </li>
                                 <li>
-                                    <a href="{{ route('lista_fantasia') }}" class="primary-link">Fantasía <span class="badge bg-info-subtle text-info float-end">4</span></a>
+                                    <a href="{{ route('lista_fantasia') }}" class="primary-link">Fantasía <span class="badge bg-info-subtle text-info float-end">71</span></a>
                                 </li>
                                 <li>
-                                    <a href="#" class="primary-link">Novela negra o policiaca <span class="badge bg-info-subtle text-info float-end">0</span></a>
+                                    <a href="historia.html" class="primary-link">Novela negra o policiaca <span class="badge bg-info-subtle text-info float-end">40</span></a>
                                 </li>
                                 <li>
-                                    <a href="#" class="primary-link">Novela romántica <span class="badge bg-info-subtle text-info float-end">0</span></a>
+                                    <a href="arte-diseno.html" class="primary-link">Novela romántica <span class="badge bg-info-subtle text-info float-end">47</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -86,19 +86,19 @@
                         <div class="card-body p-4">
                             <ul class="list-unstyled job-Categories-list mb-0">
                                 <li>
-                                    <a href="#" class="primary-link">Terror y sobrenatural <span class="badge bg-info-subtle text-info float-end">0</span></a>
+                                    <a href="government.html" class="primary-link">Terror y sobrenatural <span class="badge bg-info-subtle text-info float-end">120</span></a>
                                 </li>
                                 <li>
-                                    <a href="#" class="primary-link">Acción y aventura <span class="badge bg-info-subtle text-info float-end">0</span></a>
+                                    <a href="defence.html" class="primary-link">Acción y aventura <span class="badge bg-info-subtle text-info float-end">73</span></a>
                                 </li>
                                 <li>
-                                    <a href="#" class="primary-link">Literatura clásica <span class="badge bg-info-subtle text-info float-end">0</span></a>
+                                    <a href="teaching.html" class="primary-link">Literatura clásica <span class="badge bg-info-subtle text-info float-end">88</span></a>
                                 </li>
                                 <li>
-                                    <a href="#" class="primary-link">Cuentos <span class="badge bg-info-subtle text-info float-end">0</span></a>
+                                    <a href="retail.html" class="primary-link">Cuentos <span class="badge bg-info-subtle text-info float-end">10</span></a>
                                 </li>
                                 <li>
-                                    <a href="#" class="primary-link">Poesía <span class="badge bg-info-subtle text-info float-end">0</span></a>
+                                    <a href="diploma.html" class="primary-link">Poesía <span class="badge bg-info-subtle text-info float-end">55</span></a>
                                 </li>
                             </ul>
                         </div>
@@ -123,8 +123,12 @@
       
               <div class="mt-4">
                 
-                <a href="/" class="btn btn-primary btn-hover mt-2">
-                  <i class="uil uil-book"></i> Buscar Libros PDF
+                <a href="/libros" class="btn btn-primary btn-hover mt-2">
+                  <i class="uil uil-book"></i> Explora ebooks
+                </a>
+      
+                <a href="/nuevos" class="btn btn-outline-primary btn-hover ms-sm-1 mt-2">
+                  <i class="uil uil-arrow-growth"></i> Novedades
                 </a>
       
               </div>

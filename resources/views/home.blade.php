@@ -45,7 +45,7 @@
                             <li class="list-inline-item">Libros PDF gratis,</li>
                             <li class="list-inline-item">Descargar libros en PDF,</li>
                             <li class="list-inline-item">Biblioteca virtual PDF,</li>
-                            <li class="list-inline-item">Lectura en línea en PDF</li>
+                            <li class="list-inline-item">Resumen de libros</li>
                         </ul>
                     </div>
                     <!--end col-->
@@ -368,12 +368,12 @@
               <div class="row justify-content-center">
                 <div class="col-lg-7">
                   <div class="text-center">
-                    <h2 class="text-primary mb-4">Explore nuestra biblioteca de <span class="text-warning fw-bold">+10,000</span> libros electrónicos</h2>
+                    <h2 class="text-primary mb-4">Explore nuestra biblioteca con varios resumenes de libros seleccionados</h2>
                     
-                    <p class="text-muted">Encuentra una amplia selección de ebooks en todas las categorías. Desde bestsellers, clásicos, ciencia ficción hasta textos académicos.</p>
+                    <p class="text-muted">Encuentra una amplia selección de libros en todas las categorías. Desde bestsellers, clásicos, ciencia ficción hasta textos académicos.</p>
                     
                     <div class="mt-4 pt-2">
-                       <a href="/libros" class="btn btn-primary btn-hover">Explora los ebooks <i class="uil uil-book-open align-middle ms-1"></i></a>
+                       <a href="{{ route('categoria') }}" class="btn btn-primary btn-hover">Explora los libros <i class="uil uil-book-open align-middle ms-1"></i></a>
                     </div>
                   </div>
                 </div>

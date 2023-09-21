@@ -1,12 +1,13 @@
 <?php
 
 use App\Http\Controllers\BookController;
+use App\Http\Controllers\FormController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('home');
 });
-Route::get('/contact', function () {
+Route::get('/contacto', function () {
     return view('pages.contact');
 })->name('contact');
 
@@ -82,3 +83,5 @@ Route::prefix('/fantasia')->group(function () {
     })->name('elantris');
 
 });
+
+Route::post('/enviar-correo', [FormController::class, 'enviarCorreo'])->name('enviar.correo');
