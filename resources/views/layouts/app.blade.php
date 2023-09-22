@@ -12,22 +12,22 @@
         <meta content="Libros PDF" name="author" />
 
         <!-- App favicon -->
-        <link rel="shortcut icon" href="{{ Vite::asset('resources/img/favicon-32x32.png') }}">
+        <link rel="shortcut icon" href="{{ asset('resources/img/favicon-32x32.png') }}">
 
         <!-- Choise Css -->
-        <link rel="stylesheet" href="{{ Vite::asset('resources/css/choices.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('resources/css/choices.min.css') }}">
 
         <!-- Swiper Css -->
-        <link rel="stylesheet" href="{{ Vite::asset('resources/css/swiper-bundle.min.css') }}">
+        <link rel="stylesheet" href="{{ asset('resources/css/swiper-bundle.min.css') }}">
         
         <!-- Bootstrap Css -->
-        <link rel="stylesheet" href="{{ Vite::asset('resources/css/bootstrap.min.css') }}" id="bootstrap-style" rel="stylesheet">
+        <link rel="stylesheet" href="{{ asset('resources/css/bootstrap.min.css') }}" id="bootstrap-style" rel="stylesheet">
         
         <!-- App Css-->
-        <link href="{{ Vite::asset('resources/css/app.min.css') }}" id="app-style" rel="stylesheet" />
+        <link href="{{ asset('resources/css/app.min.css') }}" id="app-style" rel="stylesheet" />
         <!--Custom Css-->
 
-        <link rel="stylesheet" href="{{ Vite::asset('resources/css/fontawesome.css') }}">
+        <link rel="stylesheet" href="{{ asset('resources/css/fontawesome.css') }}">
         <style>
           .list-group-item-action:hover{
             color: white !important;
@@ -59,8 +59,8 @@
             <nav class="navbar navbar-expand-lg fixed-top sticky" id="navbar">
                 <div class="container-fluid custom-container">
                     <a class="navbar-brand text-dark fw-bold me-auto" href="/">
-                        <img src="{{ Vite::asset('resources/img/logo.png') }}" height="70" alt="" class="logo-dark" />
-                        <img src="{{ Vite::asset('resources/img/logo.png') }}" height="70" alt="" class="logo-light" />
+                        <img src="{{ asset('resources/img/logo.png') }}" height="70" alt="" class="logo-dark" />
+                        <img src="{{ asset('resources/img/logo.png') }}" height="70" alt="" class="logo-light" />
                     </a>
                     <div>
                         <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse"
@@ -223,22 +223,22 @@
 
         <!-- JAVASCRIPT -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-        <script src=""{{ Vite::asset('resources/js/bootstrap.bundle.min.js') }}"></script>
-        <script src="{{ Vite::asset('resources/js/bundle.js') }}"></script>
+        <script src=""{{ asset('resources/js/bootstrap.bundle.min.js') }}"></script>
+        <script src="{{ asset('resources/js/bundle.js') }}"></script>
 
         <!-- Choice Js -->
         
         <!-- Swiper Js -->
-        <script src="{{ Vite::asset('resources/js/swiper-bundle.min.js') }}"></script>
+        <script src="{{ asset('resources/js/swiper-bundle.min.js') }}"></script>
 
         <!-- Job-list Init Js -->
 
         <!-- Switcher Js -->
-        <script src="{{ Vite::asset('resources/js/switcher.init.js') }}"></script>
+        <script src="{{ asset('resources/js/switcher.init.js') }}"></script>
 
-        <script src="{{ Vite::asset('resources/js/index.init.js') }}"></script>
+        <script src="{{ asset('resources/js/index.init.js') }}"></script>
         
-        <script src="{{ Vite::asset('resources/js/app-t.js') }}"></script>
+        <script src="{{ asset('resources/js/app-t.js') }}"></script>
 
     </body>
     @yield('scripts')

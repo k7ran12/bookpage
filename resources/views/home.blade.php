@@ -345,15 +345,15 @@
                         <div class="tab-content" id="v-pills-tabContent">
                             <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
                                 aria-labelledby="v-pills-home-tab">
-                                <img src="{{ Vite::asset('resources/img/pexels-said-18246580.jpg') }}" alt="" class="img-fluid">
+                                <img src="{{ asset('resources/img/pexels-said-18246580.jpg') }}" alt="" class="img-fluid">
                             </div>
                             <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
                                 aria-labelledby="v-pills-profile-tab">
-                                <img src="{{ Vite::asset('resources/img/pexels-necip-duman-18247044.jpg') }}" alt="" class="img-fluid">
+                                <img src="{{ asset('resources/img/pexels-necip-duman-18247044.jpg') }}" alt="" class="img-fluid">
                             </div>
                             <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
                                 aria-labelledby="v-pills-messages-tab">
-                                <img src="{{ Vite::asset('resources/img/pexels-cottonbro-studio-5053847.jpg') }}" alt="" class="img-fluid">
+                                <img src="{{ asset('resources/img/pexels-cottonbro-studio-5053847.jpg') }}" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div>
@@ -403,5 +403,5 @@
   </div>
 @endsection
 @section('scripts')
-<script src="{{ Vite::asset('resources/js/data.js') }}"></script>
+<script src="{{ asset('resources/js/data.js') }}"></script>
 @endsection

@@ -106,7 +106,7 @@
       
             <div class="col-lg-5 ms-auto order-first order-lg-last">
               <div class="text-center">
-                <img src="{{ Vite::asset('resources/img/contact.png') }}" class="img-fluid" alt="imagen contacto">
+                <img src="{{ asset('resources/img/contact.png') }}" class="img-fluid" alt="imagen contacto">
               </div>
       
               <div class="mt-4 pt-3">
