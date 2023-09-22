@@ -80,5 +80,70 @@ Route::prefix('/fantasia')->group(function () {
     Route::get('/elantris', function () {
         return view('pages.fantasia.elantris');
     })->name('elantris');
+});
 
+Route::prefix('/novela-negra-o-policiaca')->group(function () {
+    Route::get('/lista', function () {
+        return view('pages.novela_negra_o_policiaca.lista');
+    })->name('novela_negra_o_policiaca');
+
+    Route::get('/el-silencio-de-los-corderos', function () {
+        return view('pages.novela_negra_o_policiaca.el_silencio_de_los_corderos');
+    })->name('el_silencio_de_los_corderos');
+
+    Route::get('/hombres-que-no-amaban-a-las-mujeres', function () {
+        return view('pages.novela_negra_o_policiaca.hombres_que_no_amaban_a_las_mujeres');
+    })->name('hombres_que_no_amaban_a_las_mujeres');
+
+    Route::get('/el-cuervo', function () {
+        return view('pages.novela_negra_o_policiaca.el_cuervo');
+    })->name('el_cuervo');
+
+    Route::get('/la-chica-del-tren', function () {
+        return view('pages.novela_negra_o_policiaca.la_chica_del_tren');
+    })->name('la_chica_del_tren');
+});
+
+Route::prefix('/Novela-Romantica')->group(function () {
+    Route::get('/lista', function () {
+        return view('pages.novela_romantica.lista');
+    })->name('novela_romantica');
+
+    Route::get('/orgullo-y-prejuicio', function () {
+        return view('pages.novela_romantica.orgullo_y_prejuicio');
+    })->name('orgullo_y_prejuicio');
+
+    Route::get('/cincuenta-sombras-de-grey', function () {
+        return view('pages.novela_romantica.cincuenta_sombras_de_grey');
+    })->name('cincuenta_sombras_de_grey');
+
+    Route::get('/bajo-el-sol-de-medianoche', function () {
+        return view('pages.novela_romantica.bajo_el_sol_de_medianoche');
+    })->name('bajo_el_sol_de_medianoche');
+
+    Route::get('/eleanor_y_park', function () {
+        return view('pages.novela_romantica.eleanor_y_park');
+    })->name('eleanor_y_park');
+});
+
+Route::prefix('/Terror-sobrenatural')->group(function () {
+    Route::get('/lista', function () {
+        return view('pages.terror_sobrenatural.lista');
+    })->name('terror_sobrenatural');
+
+    Route::get('/el-resplandor', function () {
+        return view('pages.terror_sobrenatural.el_resplandor');
+    })->name('el_resplandor');
+
+    Route::get('/el-exorcista', function () {
+        return view('pages.terror_sobrenatural.el_exorcista');
+    })->name('el_exorcista');
+
+    Route::get('/coraline', function () {
+        return view('pages.terror_sobrenatural.coraline');
+    })->name('coraline');
+
+    Route::get('/el-hogar-de-miss-peregrine-para-ninos-peculiares', function () {
+        return view('pages.terror_sobrenatural.el_hogar_de_miss_peregrine_para_ninos_peculiares');
+    })->name('el_hogar_de_miss_peregrine_para_ninos_peculiares');
 });
